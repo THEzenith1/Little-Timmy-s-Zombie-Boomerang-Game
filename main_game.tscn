@@ -1,0 +1,106 @@
+[gd_scene load_steps=9 format=3 uid="uid://c81hh88tl747w"]
+
+[ext_resource type="PackedScene" uid="uid://4exp5a5cujio" path="res://Scenes/target.tscn" id="1_fximm"]
+[ext_resource type="PackedScene" uid="uid://bclmddqq8lfa0" path="res://Scenes/player.tscn" id="1_rpk0d"]
+[ext_resource type="PackedScene" uid="uid://bler0fxkj8ufi" path="res://Scenes/background_1.tscn" id="4_4qxcw"]
+[ext_resource type="PackedScene" uid="uid://bnh7wpmtoe32g" path="res://Scenes/spawner.tscn" id="6_22jk3"]
+[ext_resource type="PackedScene" uid="uid://diiw5p74atko7" path="res://Scenes/boomerang_2.tscn" id="6_xsphq"]
+[ext_resource type="Texture2D" uid="uid://bo0de6wevednl" path="res://Assets/ReloadPixelFont.png" id="6_yaflo"]
+[ext_resource type="PackedScene" uid="uid://c1h3enng7kmk2" path="res://Scenes/cure.tscn" id="7_2nfnd"]
+[ext_resource type="PackedScene" uid="uid://c1sjnodmux1d4" path="res://Scenes/zombie.tscn" id="8_obeqf"]
+
+[node name="MainGame" type="Node2D"]
+
+[node name="DirectionalLight2D" type="DirectionalLight2D" parent="."]
+position = Vector2(-149, 98)
+color = Color(0.854902, 0.576471, 0, 1)
+energy = 0.17
+blend_mode = 1
+
+[node name="Target" parent="." instance=ExtResource("1_fximm")]
+position = Vector2(6003, 11)
+
+[node name="Area2D" parent="." instance=ExtResource("6_22jk3")]
+position = Vector2(1297, 1997)
+scale = Vector2(1.36, 1.36)
+
+[node name="Background1" parent="." instance=ExtResource("4_4qxcw")]
+position = Vector2(167, 254)
+scale = Vector2(7.52346, 7.52346)
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Background1"]
+
+[node name="Player" parent="." instance=ExtResource("1_rpk0d")]
+position = Vector2(51, 161)
+scale = Vector2(1.00385, 1.00385)
+
+[node name="CanvasModulate" type="CanvasModulate" parent="."]
+y_sort_enabled = true
+position = Vector2(-94, -80)
+color = Color(0.201526, 0.201527, 0.201526, 1)
+
+[node name="Boomerang_2" parent="." instance=ExtResource("6_xsphq")]
+position = Vector2(143, -240)
+scale = Vector2(0.399999, 0.399999)
+
+[node name="ReloadPixelFont" type="Sprite2D" parent="."]
+position = Vector2(628, 718)
+texture = ExtResource("6_yaflo")
+
+[node name="cure" parent="." instance=ExtResource("7_2nfnd")]
+position = Vector2(-5929, 2236)
+scale = Vector2(2.90321, 2.90321)
+
+[node name="Zombie" parent="." instance=ExtResource("8_obeqf")]
+position = Vector2(-4919, 1960)
+
+[node name="Zombie2" parent="." instance=ExtResource("8_obeqf")]
+position = Vector2(-4730, 2060)
+
+[node name="Zombie3" parent="." instance=ExtResource("8_obeqf")]
+position = Vector2(-4388, 2175)
+
+[node name="Zombie4" parent="." instance=ExtResource("8_obeqf")]
+position = Vector2(-4673, 1951)
+
+[node name="Zombie5" parent="." instance=ExtResource("8_obeqf")]
+position = Vector2(-4550, 1880)
+
+[node name="Zombie6" parent="." instance=ExtResource("8_obeqf")]
+position = Vector2(-4547, 2277)
+
+[node name="Zombie7" parent="." instance=ExtResource("8_obeqf")]
+position = Vector2(-4899, 2386)
+
+[node name="Zombie8" parent="." instance=ExtResource("8_obeqf")]
+position = Vector2(-4592, 2110)
+
+[node name="Zombie9" parent="." instance=ExtResource("8_obeqf")]
+position = Vector2(-4992, 1996)
+
+[node name="Zombie10" parent="." instance=ExtResource("8_obeqf")]
+position = Vector2(-4925, 2191)
+
+[node name="Zombie11" parent="." instance=ExtResource("8_obeqf")]
+position = Vector2(-5413, 2410)
+
+[node name="Zombie12" parent="." instance=ExtResource("8_obeqf")]
+position = Vector2(-5246, 1953)
+
+[node name="Zombie13" parent="." instance=ExtResource("8_obeqf")]
+position = Vector2(-5220, 2391)
+
+[node name="Zombie14" parent="." instance=ExtResource("8_obeqf")]
+position = Vector2(-4961, 2650)
+
+[node name="Zombie15" parent="." instance=ExtResource("8_obeqf")]
+position = Vector2(-4604, 2546)
+
+[node name="Area2D2" parent="." instance=ExtResource("6_22jk3")]
+position = Vector2(6656, 1178)
+
+[node name="Area2D3" parent="." instance=ExtResource("6_22jk3")]
+position = Vector2(1730, -2715)
+
+[node name="Area2D4" parent="." instance=ExtResource("6_22jk3")]
+position = Vector2(-4133, -2820)
